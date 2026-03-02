@@ -1,6 +1,6 @@
 ## Run project 
 
-Have docker installed in local, no need of Java, Maven and kafka.
+Have docker installed in local, no need of Java, Maven and Kafka.
 
 ```bash
 docker-compose up -d
@@ -8,13 +8,13 @@ docker-compose up -d
 ```bash
 curl -X POST localhost:8080/send?message=HelloWorld
 ```
-Execute curl command to send message to kafka and that will be pulled by consumer.
+Execute curl command to send message to Kafka and that will be pulled by consumer.
 In application logs expected log is 'Consumed message: HelloWorld'
 
 ## Local setup
-If want to work with Spring Boot locally + kafka from docker
+To work with Spring Boot locally + Kafka from docker
 
-Execute this command to start kafka
+Execute this command to start Kafka
 ```bash
 docker-compose up -d zookeeper kafka
 ```
